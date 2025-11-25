@@ -4,21 +4,20 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class conexion {
+public class Conexion {
 
-    private static final String URL = "jdbc:mysql://maglev.proxy.rlwy.net:39367/railway?useSSL=true";
-    private static final String USER = "root";
+    private static final String URL = "jdbc:mysql://maglev.proxy.rlwy.net:39367/railway?useSSL=true&allowPublicKeyRetrieval=true";
+    private static final String USER = "root"; 
     private static final String PASSWORD = "ZIfAOHZPtIPKbwbuwxXLYISilHSLNeZp";
 
     public static Connection getConnection() {
-        Connection conexion = null;
+        Connection conn = null;
         try {
-            conexion = DriverManager.getConnection(URL, USER, PASSWORD);
-            System.out.println("Conexión exitosa");
+            conn = DriverManager.getConnection(URL, USER, PASSWORD);
+            System.out.println("✅ Conexión exitosa a Railway");
         } catch (SQLException e) {
-            System.out.println("Error en la conexión: " + e.getMessage());
+            System.out.println("❌ Error en la conexión: " + e.getMessage());
         }
-        return conexion;
+        return conn;
     }
 }
-
