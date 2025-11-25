@@ -14,10 +14,11 @@ public class Conexion {
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(URL, USER, PASSWORD);
-            System.out.println("✅ Conexión exitosa a Railway");
+            System.out.println("Conexión exitosa a Railway");
         } catch (SQLException e) {
-            System.out.println("❌ Error en la conexión: " + e.getMessage());
+            System.out.println("Error en la conexión: " + e.getMessage());
         }
         return conn;
     }
 }
+
