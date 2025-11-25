@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class conexion {
-    private static String URL = "mysql://root:ZIfAOHZPtIPKbwbuwxXLYISilHSLNeZp@maglev.proxy.rlwy.net:39367/railway";
+    private static String URL = "jdbc:mysql://root:ZIfAOHZPtIPKbwbuwxXLYISilHSLNeZp@maglev.proxy.rlwy.net:39367/railway";
         private static String USER = "railway";
         private static String PASSWORD = "ZIfAOHZPtIPKbwbuwxXLYISilHSLNeZp";
 
@@ -21,3 +21,4 @@ public class conexion {
             return conexion;
         }
 }
+
