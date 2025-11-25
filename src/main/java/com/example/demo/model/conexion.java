@@ -6,9 +6,10 @@ import java.sql.SQLException;
 
 public class Conexion {
 
-    private static final String URL = "jdbc:mysql://maglev.proxy.rlwy.net:39367/railway?useSSL=true&allowPublicKeyRetrieval=true";
+    private static final String URL = "jdbc:mysql://yamanote.proxy.rlwy.net:48592/railway?useSSL=true&allowPublicKeyRetrieval=true
+";
     private static final String USER = "root"; 
-    private static final String PASSWORD = "ZIfAOHZPtIPKbwbuwxXLYISilHSLNeZp";
+    private static final String PASSWORD = "NFLtDsIUQMYWdUaVcUKkzCVviCfgPppy";
 
     public static Connection getConnection() {
         Connection conn = null;
@@ -21,4 +22,5 @@ public class Conexion {
         return conn;
     }
 }
+
 
