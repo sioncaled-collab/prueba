@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class conexion {
 
-    private static final String URL = "jdbc:mysql://maglev.proxy.rlwy.net:39367/railway";
+    private static final String URL = "jdbc:mysql://maglev.proxy.rlwy.net:39367/railway?useSSL=true";
     private static final String USER = "root";
     private static final String PASSWORD = "ZIfAOHZPtIPKbwbuwxXLYISilHSLNeZp";
 
@@ -21,3 +21,4 @@ public class conexion {
         return conexion;
     }
 }
+
